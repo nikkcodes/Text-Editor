@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading">Text Editor</h1>
+    <div id="button-container">
+      <button id="bold" onclick="makebold(this)">Bold</button>
+      <button id="italic" onclick="makeitalic(this)">italic</button>
+      <button id="underline" onclick="makeunderline(this)">underline</button>
+      <button id="left-align" onclick="align(this,'left')">Left Align</button>
+      <button id="right-align" onclick="align(this,'right')">
+        Right Align
+      </button>
+      <button id="center-align" onclick="align(this,'center')">
+        Center Align
+      </button>
+    </div>
+    <div id="container">
+      <div id="text-area">
+        <h1>Add Text</h1>
+        <textarea
+          name="input-text"
+          id="inputText"
+          cols="75"
+          rows="30"
+          onkeydown="updateText()"
+        ></textarea>
+      </div>
+      <div id="output-area">
+        <h1>Final Text</h1>
+        <div id="output-text"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

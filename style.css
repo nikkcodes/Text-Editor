@@ -1,0 +1,55 @@
+body {
+  background-color: lightblue;
+}
+button {
+  border: solid black;
+  background-color: pink;
+  height: 50px;
+  width: 100px;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#inputText {
+  background-color: lightblue;
+  border: solid black;
+}
+#output-area {
+  height: auto;
+  width: 30vw;
+  /* overflow: auto; */
+  /* border: solid black; */
+}
+#output-text {
+  height: 90%;
+
+  width: 100%;
+  border: solid black;
+  word-wrap: break-word;
+}
+#button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.active {
+  background-color: orange;
+}
+.boldmaker {
+  font-weight: bold;
+}
+.italicmaker {
+  font-style: italic;
+}
+.underliner {
+  text-decoration: underline;
+}
+#heading {
+  position: relative;
+  left: 30%;
+
+  color: darkgray;
+  font-size: 4rem;
+}
